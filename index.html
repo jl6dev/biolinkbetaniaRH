@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Mentoria, Consultoria & Eventos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <img src="IMG_9804.jpg" class="hero-img" alt="Imagem principal">
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <h1>MENTORIA • CONSULTORIA • EVENTOS</h1>
+    <p>Conectando profissionais, empresas e oportunidades</p>
+    <a href="#servicos" class="btn">Escolher serviço</a>
+  </div>
+</header>
+
+<section class="section sobre">
+  <img src="IMG_9487-Editar.jpg" alt="Foto profissional">
+  <div>
+    <h2>Quem sou</h2>
+    <p>
+      Mentora, consultora e organizadora de cursos e eventos,
+      atuando no desenvolvimento profissional, empresarial
+      e conexões estratégicas.
+    </p>
+  </div>
+</section>
+
+<section class="section cinza" id="servicos">
+  <h2>Qual serviço você busca?</h2>
+
+  <div class="cards">
+    <div class="card botao" onclick="selecionarServico(this, 'Mentoria profissional')">
+      Mentoria profissional
+    </div>
+
+    <div class="card botao" onclick="selecionarServico(this, 'Consultoria empresarial')">
+      Consultoria empresarial
+    </div>
+
+    <div class="card botao" onclick="selecionarServico(this, 'Organização de cursos e eventos')">
+      Organização de cursos e eventos
+    </div>
+
+    <div class="card botao" onclick="selecionarServico(this, 'Currículo e posicionamento profissional')">
+      Currículo e posicionamento profissional
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Como posso te auxiliar?</h2>
+  <ul class="lista">
+    <li>Planejamento de carreira</li>
+    <li>Desenvolvimento profissional</li>
+    <li>Organização de cursos e eventos</li>
+    <li>Conexão com oportunidades</li>
+    <li>Estratégia para profissionais e empresas</li>
+  </ul>
+</section>
+
+<section class="section cinza contato">
+  <h2>Próximo passo</h2>
+  <p>
+    Selecione o serviço acima e clique abaixo para falar comigo no WhatsApp.
+  </p>
+  <button onclick="irParaWhatsapp()">Falar no WhatsApp</button>
+</section>
+
+<footer>
+  <p>© 2026 • Mentoria, Consultoria & Eventos</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
