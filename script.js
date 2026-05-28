@@ -25,3 +25,20 @@ function irParaWhatsapp() {
 
   window.open(url, "_blank");
 }
+// ENVIO DE CURRÍCULO
+document
+  .getElementById("formCurriculo")
+  .addEventListener("submit", function(e) {
+
+    e.preventDefault();
+
+    const nome = document.getElementById("nome").value;
+    const vaga = document.getElementById("vaga").value;
+
+    alert(
+      `Currículo enviado com sucesso!\n\nNome: ${nome}\nÁrea: ${vaga}`
+    );
+
+    // limpa formulário
+    this.reset();
+});
