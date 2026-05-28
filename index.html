@@ -1,96 +1,194 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
-  <title>Mentoria, Consultoria & Eventos</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Mentoria, Consultoria & Eventos</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header class="hero">
-  <img src="IMG_9804.jpg" class="hero-img" alt="Imagem principal">
-  <div class="overlay"></div>
-  <div class="hero-content">
-    <h1>MENTORIA • CONSULTORIA • EVENTOS</h1>
-    <p>Conectando profissionais, empresas e oportunidades</p>
-    <a href="#servicos" class="btn">Escolher serviço</a>
-  </div>
-</header>
+  <!-- HERO -->
+  <header class="hero">
 
-<section class="section sobre">
-  <img src="IMG_9487-Editar.jpg" alt="Foto profissional">
-  <div>
-    <h2>Quem sou</h2>
+    <img src="IMG_9804.jpg" class="hero-img" alt="Imagem principal">
+
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+      <h1>MENTORIA • CONSULTORIA • EVENTOS</h1>
+
+      <p>
+        Conectando profissionais, empresas e oportunidades
+      </p>
+
+      <a href="#servicos" class="btn">
+        Escolher serviço
+      </a>
+    </div>
+
+  </header>
+
+  <!-- SOBRE -->
+  <section class="section sobre">
+
+    <img src="IMG_9487-Editar.jpg" alt="Foto profissional">
+
+    <div>
+      <h2>Quem sou</h2>
+
+      <p>
+        Mentora, consultora e organizadora de cursos e eventos,
+        atuando no desenvolvimento profissional, empresarial
+        e conexões estratégicas.
+      </p>
+    </div>
+
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section class="section cinza" id="servicos">
+
+    <h2>Qual serviço você busca?</h2>
+
+    <div class="cards">
+
+      <div class="card" onclick="selecionarServico(this, 'Mentoria profissional')">
+
+        Mentoria profissional
+
+      </div>
+
+      <div class="card" onclick="selecionarServico(this, 'Consultoria empresarial')">
+
+        Consultoria empresarial
+
+      </div>
+
+      <div class="card" onclick="selecionarServico(this, 'Organização de cursos e eventos')">
+
+        Organização de cursos e eventos
+
+      </div>
+
+      <div class="card" onclick="selecionarServico(this, 'Currículo e posicionamento profissional')">
+
+        Currículo e posicionamento profissional
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- AUXÍLIO -->
+  <section class="section">
+
+    <h2>Como posso te auxiliar?</h2>
+
+    <ul class="lista">
+      <li>Planejamento de carreira</li>
+      <li>Desenvolvimento profissional</li>
+      <li>Organização de cursos e eventos</li>
+      <li>Conexão com oportunidades</li>
+      <li>Estratégia para profissionais e empresas</li>
+    </ul>
+
+  </section>
+
+  <!-- CONTATO -->
+  <section class="section cinza contato">
+
+    <h2>Próximo passo</h2>
+
     <p>
-      Mentora, consultora e organizadora de cursos e eventos,
-      atuando no desenvolvimento profissional, empresarial
-      e conexões estratégicas.
+      Selecione o serviço acima e clique abaixo para falar comigo no WhatsApp.
     </p>
-  </div>
-</section>
 
-<section class="section cinza" id="servicos">
-  <h2>Qual serviço você busca?</h2>
+    <button onclick="irParaWhatsapp()">
+      Falar no WhatsApp
+    </button>
 
- <div class="card" onclick="selecionarServico(this, 'Mentoria profissional')">
-  Mentoria profissional
-</div>
+  </section>
 
-<div class="card" onclick="selecionarServico(this, 'Consultoria empresarial')">
-  Consultoria empresarial
-</div>
+  <!-- CURRÍCULO -->
+  <section class="section curriculo">
 
-<div class="card" onclick="selecionarServico(this, 'Organização de cursos e eventos')">
-  Organização de cursos e eventos
-</div>
+    <h2>Envio de Currículo</h2>
 
-<div class="card" onclick="selecionarServico(this, 'Currículo e posicionamento profissional')">
-  Currículo e posicionamento profissional
-</div>
-  </div>
-</section>
+    <p class="texto-curriculo">
+      Clique no botão abaixo para preencher o formulário e enviar seu currículo.
+    </p>
 
-<section class="section">
-  <h2>Como posso te auxiliar?</h2>
-  <ul class="lista">
-    <li>Planejamento de carreira</li>
-    <li>Desenvolvimento profissional</li>
-    <li>Organização de cursos e eventos</li>
-    <li>Conexão com oportunidades</li>
-    <li>Estratégia para profissionais e empresas</li>
-  </ul>
-</section>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdZQAETYoFu89gNIehxM1GKfMbNOgfxHi52AqJkUG-5ix07uA/viewform?usp=header"
+      target="_blank" class="btn-curriculo">
 
-<section class="section cinza contato">
-  <h2>Próximo passo</h2>
-  <p>
-    Selecione o serviço acima e clique abaixo para falar comigo no WhatsApp.
-  </p>
- <button onclick="irParaWhatsapp()">
-  Falar no WhatsApp
-</button>
-</section>
-<!-- ENVIO DE CURRÍCULO -->
-<section class="section curriculo">
+      Enviar currículo
 
-  <h2>Envio de Currículo</h2>
+    </a>
 
-  <p class="texto-curriculo">
-    Clique no botão abaixo para preencher o formulário e enviar seu currículo.
-  </p>
+  </section>
 
-  <a 
-    href="https://docs.google.com/forms/d/e/1FAIpQLSdZQAETYoFu89gNIehxM1GKfMbNOgfxHi52AqJkUG-5ix07uA/viewform?usp=header"
-    target="_blank"
-    class="btn-curriculo">
-    
-    Enviar currículo
+  <!-- FOOTER -->
+  <footer>
 
-  </a>
+    <p>
+      © 2026 • Mentoria, Consultoria & Eventos
+    </p>
 
-</section>
+  </footer>
 
-<footer>
-  <p>© 2026 • Mentoria, Consultoria & Eventos</p>
-</footer>
+  <!-- SCRIPT -->
+  <script>
+
+    let servicoSelecionado = "";
+
+    // Selecionar serviço
+    function selecionarServico(elemento, servico) {
+
+      // Remove seleção anterior
+      document.querySelectorAll(".card").forEach(card => {
+        card.classList.remove("selecionado");
+      });
+
+      // Marca atual
+      elemento.classList.add("selecionado");
+
+      // Salva serviço
+      servicoSelecionado = servico;
+    }
+
+    // WhatsApp
+    function irParaWhatsapp() {
+
+      if (!servicoSelecionado) {
+
+        alert("Selecione um serviço antes de continuar.");
+
+        return;
+      }
+
+      const telefone = "5581986114459";
+
+      const mensagem =
+        `Olá! Tenho interesse no serviço:
+
+${servicoSelecionado}
+
+Gostaria de mais informações.`;
+
+      const url =
+        `https://wa.me/${telefone}?text=${encodeURIComponent(mensagem)}`;
+
+      window.open(url, "_blank");
+    }
+
+  </script>
+
+</body>
+
+</html>
